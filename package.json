@@ -1,0 +1,40 @@
+{
+  "name": "fec",
+  "version": "1.0.0",
+  "description": "test component for FEC project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "nodemon ./server",
+    "start:dev": "webpack -d --watch",
+    "db:start": "mongod",
+    "db:seed": "node ./server/db/seed-data.js"
+  },
+  "author": "Hunter Treadaway",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.17.2",
+    "enzyme": "^3.10.0",
+    "express": "^4.15.4",
+    "jest": "^24.9.0",
+    "jquery": "^3.2.1",
+    "mongoose": "^5.7.13",
+    "mongoose-simple-random": "^0.4.1",
+    "mysql": "^2.14.1",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "styled-components": "^4.4.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "babel-loader": "^8.0.5",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+  }
+}
