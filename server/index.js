@@ -8,7 +8,8 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(path.resolve(__dirname, '../../Related-Recently-Viewed-Products/client/public')));
+app.use(express.static(path.resolve(__dirname, '../client/public')));
+app.use('/search', express.static('/Users/huntertreadaway/code_projects/hack_reactor/hrla33/FEC/Nav-Search/client/dist/'));
 app.use('/', router);
 
 var port = 3003;
