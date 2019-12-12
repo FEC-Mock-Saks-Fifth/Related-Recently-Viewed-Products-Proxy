@@ -1,8 +1,12 @@
 {
   "routes": [
     {
-      "route": "/nav",
-      "address": "http://localhost:3001/nav"
+      "route": "/reviews",
+      "address": "http://localhost:3000/reviews"
+    },
+    {
+      "route": "/writereview",
+      "address": "http://localhost:3000/writereview"
     },
     {
       "route": "/hunter_all_products",
