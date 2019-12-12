@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/nav",
+      "address": "http://localhost:3001/nav"
+    },
+    {
+      "route": "/hunter_all_products",
+      "address": "http://localhost:3003/hunter_all_products"
+    },
+    {
+      "route": "/hunter_related_products",
+      "address": "http://localhost:3003/hunter_related_products"
+    }
+  ]
+}
