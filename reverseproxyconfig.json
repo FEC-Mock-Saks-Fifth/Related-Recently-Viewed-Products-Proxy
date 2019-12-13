@@ -2,15 +2,15 @@
   "routes": [
     {
       "route": "/autosearch",
-      "address": "http://localhost:3001/reviews"
-    },
-    {
-      "route": "/reviews",
-      "address": "http://localhost:3000/reviews"
+      "address": "http://localhost:3001/search"
     },
     {
       "route": "/derick_product_details",
       "address": "http://localhost:3002/derick_product_details"
+    },
+    {
+      "route": "/reviews",
+      "address": "http://localhost:3000/reviews"
     },
     {
       "route": "/writereview",

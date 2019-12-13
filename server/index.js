@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// const router = require('./router');
 const path = require('path');
 const proxy = require('http-proxy-middleware');
 const { routes } = require('../reverseproxyconfig.json');
@@ -9,7 +8,6 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-
 
 /* STATIC FILE SERVES */
 /* use the following routes to serve bundles packaged by companion repos */
@@ -30,7 +28,7 @@ for (route of routes) {
       proxy({
           target: route.address,
           pathRewrite: (path, req) => {
-            // console.log("USING PROXY ROUTER", path, route.address)
+            // console.log("USING PROXY ROUTER", `path: ${path}`, `route.address: ${route.address}`);
             return path.split('/').slice(2).join('/'); // Could use replace, but take care of the leading '/'
           }
       })
