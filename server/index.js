@@ -19,6 +19,7 @@ app.use(express.static(path.resolve(__dirname, '../common')));
 app.use('/reviews', express.static('/Users/huntertreadaway/code_projects/hack_reactor/hrla33/FEC/Product-Review/client/dist/'))
 app.use('/recs', express.static('/Users/huntertreadaway/code_projects/hack_reactor/hrla33/FEC/Related-Recently-Viewed-Products/client/public/'));
 app.use('/search', express.static('/Users/huntertreadaway/code_projects/hack_reactor/hrla33/FEC/Nav-Search/client/dist/'));
+app.use('/productdetail', express.static('/Users/huntertreadaway/code_projects/hack_reactor/hrla33/FEC/Product-Description/client/dist/'));
 
 /* use this to serve bundles packaged by this program */
 // app.use(express.static(path.resolve(__dirname, '../client/public')));
