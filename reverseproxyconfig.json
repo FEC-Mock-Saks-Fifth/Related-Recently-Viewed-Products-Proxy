@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/autosearch",
-      "address": "http://localhost:3001/search"
+      "address": "http://localhost:3001/autosearch"
     },
     {
       "route": "/derick_product_details",
