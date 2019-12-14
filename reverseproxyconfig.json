@@ -14,6 +14,7 @@
     },
     {
       "route": "/writereview",
+      "method": "POST",
       "address": "http://localhost:3000/writereview"
     },
     {
