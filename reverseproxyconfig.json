@@ -10,12 +10,12 @@
     },
     {
       "route": "/reviews",
-      "address": "http://localhost:3000/reviews"
+      "address": "http://localhost:3005/reviews"
     },
     {
       "route": "/writereview",
       "method": "POST",
-      "address": "http://localhost:3000/writereview"
+      "address": "http://localhost:3005/writereview"
     },
     {
       "route": "/hunter_all_products",
